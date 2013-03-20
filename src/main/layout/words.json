@@ -1,0 +1,53 @@
+// JSON version of words.ddl
+{
+  "name" : "words",
+  "description" : "Words in the 20Newsgroups dataset.",
+  "keys_format" : {
+    "org.kiji.schema.avro.RowKeyFormat2" : {
+      "encoding" : "FORMATTED",
+      "salt" : {
+        "suppress_key_materialization" : true
+      },
+      "components" : [ {
+        "name" : "key",
+        "type" : "STRING"
+      } ]
+    }
+  },
+  "locality_groups" : [ {
+    "id" : 1,
+    "name" : "default",
+    "description" : "Main storage.",
+    "in_memory" : false,
+    "max_versions" : 1,
+    "ttl_seconds" : 2147483647,
+    "compression_type" : "GZ",
+    "families" : [ {
+      "id" : 1,
+      "name" : "info",
+      "description" : "Basic information",
+      "columns" : [ {
+        "id" : 1,
+        "name" : "word",
+        "description" : "The word.",
+        "column_schema" : {
+          "storage" : "UID",
+          "type" : "INLINE",
+          "value" : "\"string\""
+        }
+      }, {
+        "id" : 2,
+        "name" : "doubleword",
+        "description" : "Twice the word.",
+        "column_schema" : {
+          "storage" : "UID",
+          "type" : "INLINE",
+          "value" : "\"string\""
+        }
+      } ]
+    } ]
+  } ],
+  "version" : "layout-1.1",
+  "layout_id" : "1"
+}
+
