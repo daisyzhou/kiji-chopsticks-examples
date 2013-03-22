@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-package org.kiji.chopsticks.tutorial
+package org.kiji.chopsticks.examples
 
 import scala.actors.Futures._
 import scala.io.Source

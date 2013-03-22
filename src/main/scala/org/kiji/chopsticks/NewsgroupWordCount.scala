@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-package org.kiji.chopsticks.tutorial
+package org.kiji.chopsticks.examples
 
 import java.util.NavigableMap
 
@@ -32,7 +32,7 @@ import org.kiji.schema.EntityId
  *
  * Usage:
  *   chop hdfs <path/to/this/jar> \
- *       org.kiji.chopsticks.NewsgroupWordCount \
+ *       org.kiji.chopsticks.examples.NewsgroupWordCount \
  *       --input kiji://.env/default/words --output ./wordcount.tsv
  */
 class NewsgroupWordCount(args: Args) extends Job(args) {

@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-package org.kiji.chopsticks.tutorial
+package org.kiji.chopsticks.examples
 
 import java.util.NavigableMap
 
@@ -33,7 +33,7 @@ import org.kiji.schema.EntityId
  * This is a trivial example that demonstrates writing to a kiji table.
  *
  * Usage:
- *   chop org.kiji.chopsticks.NewsgroupWordDoubler \
+ *   chop jar org.kiji.chopsticks.examples.NewsgroupWordDoubler \
  *   --input kiji://.env/default/words --output kiji://.env/default/words
  */
 class NewsgroupWordDoubler(args: Args) extends Job(args) {

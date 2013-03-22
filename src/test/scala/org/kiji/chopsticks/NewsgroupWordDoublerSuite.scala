@@ -17,7 +17,7 @@
  * limitations under the License.
  */
 
-package org.kiji.chopsticks.tutorial
+package org.kiji.chopsticks.examples
 
 import java.util.NavigableMap
 import scala.collection.mutable.Buffer
